@@ -45,7 +45,7 @@ namespace SparkAuto
                 .AddDefaultTokenProviders()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddSingleton<IEmailSender, EmailSender>();
-                                                                        
+
             services.AddAuthentication().AddFacebook(fb =>
             {
                 fb.AppId = "1460046297460691";
